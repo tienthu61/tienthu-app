@@ -7,7 +7,7 @@ from datetime import datetime
 st.set_page_config(page_title="Tiến Thu CRM", layout="wide")
 
 # Link Google Sheets của bạn (THAY LINK CỦA BẠN VÀO ĐÂY)
-URL_SHEET = "https://docs.google.com/spreadsheets/d/1UKatDsrpiNYryQDukxREKzh6uMQC8fHe?rtpof=true&usp=drive_fs"
+URL_SHEET = "https://docs.google.com/spreadsheets/d/1UKatDsrpiNYryQDukxREKzh6uMQC8fHe/edit?usp=sharing&ouid=112417111355852347381&rtpof=true&sd=true"
 
 # Kết nối với Google Sheets
 conn = st.connection("gsheets", type=GSheetsConnection)
@@ -82,3 +82,4 @@ elif choice == "CHI TIẾT LIÊN HỆ":
     st.header("🔍 Tra cứu dữ liệu từ Google Sheets")
     df = load_data()
     st.dataframe(df)
+
